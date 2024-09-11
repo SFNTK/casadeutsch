@@ -1,0 +1,96 @@
+
+#info{
+    width: 100%;
+    min-height: 90vh; 
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    font-family: "DM Sans", sans-serif;
+}
+#map{
+    position: relative;
+    width: 50%;
+    padding-top: 2vh;
+    padding-left: 2vw;
+   
+}
+#rectangle{
+   
+    width: 100px;
+    height: 100px;
+    background-color:  #f36c3b;
+    z-index: 1;
+    border-radius: 10px;
+    
+}
+#mapel{
+    width: 80%;
+     position: absolute;
+     top: 70px;
+    height: 70vh;
+    z-index: 2;
+    margin-left: 10%;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 5px rgb(243, 108, 59));
+
+}
+#location{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    width: 17%;
+    align-self: center;
+}
+#location span:first-of-type{
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.7rem;
+
+}
+#location span:nth-of-type(2){
+    font-family: "DM Sans", sans-serif;
+    
+
+}
+#number div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+#number{
+    width:20% ;
+    align-self: center;
+}
+#number div span:nth-of-type(2){
+    font-size: 1.2rem;
+    color: #f36c3b; 
+}
+#number div span:first-of-type{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+@media (max-width:992px){
+   
+}
+@media (max-width:1023px){
+    #info{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #mapel{
+        height: 50vh;
+        width: 80vw;
+    }
+    #location{
+        margin-top: 50vh;
+        width: 90%;
+        align-self: center;
+    }
+    #number{
+        width: 90%;
+
+align-self: center;
+    }
+}

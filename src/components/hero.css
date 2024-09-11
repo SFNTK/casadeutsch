@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+
+
+#hero {
+    width: 100%;
+    position: relative;
+    height: auto;
+    padding: 2vh 2vw;
+    background-color: black;
+    font-family: "DM Sans", sans-serif;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#topherotext {
+    padding: 1.2%;
+    font-weight: bold;
+    border-radius: 50px;
+    border-left: white solid 0.3px;
+    border-right: white solid 0.3px;
+    max-width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero span:nth-of-type(1) {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2vh;
+    font-family: "Nerko One", cursive;
+
+}
+
+#hero span:nth-of-type(2) {
+    font-size: 2rem;
+    font-family: "Nerko One", cursive;
+
+    color: #f36c3b;
+    filter: drop-shadow(10px 10px 10px rgb(243, 108, 59));
+    font-weight: bold;
+    text-align: center;
+}
+
+#glasscircle {
+    background: rgba(243, 108, 59, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 150px;
+    text-align: center;
+}
+
+#covercont {
+    margin-top: 5vh;
+    background-image: url('../../public/cover3.png');
+
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90vw;
+  transition: all 20s ease-in-out;
+    height: 40vh;
+    border-radius: 150px;
+    border: white solid 2px;
+}
+
+#cover {
+    width: 100%;
+    margin-top: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+
+    height: 60vh;
+
+}
+
+#hero div:nth-of-type(2) img:first-of-type {
+    border-radius: 10px;
+
+}
+
+#hero div:nth-of-type(2) img:nth-of-type(2) {
+    position: absolute;
+    width: 10%;
+    height: auto;
+    left: -5%;
+    top: 0;
+}
+
+#star1,
+#star2 {
+    position: absolute;
+    width: 5%;
+    height: auto;
+}
+
+#star1 {
+    top: 10%;
+    left: 10%;
+    filter: drop-shadow(10px 10px 10px rgb(243, 108, 59));
+}
+
+#star2 {
+    top: 30%;
+    transform: rotate(20deg);
+    right: 10%;
+}
+
+#hero .char {
+    transform: translateY(30px);
+    opacity: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+#splited {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transition: transform 2s;
+}
+
+#undersplit {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+@media (max-width:992px){
+   
+}
+@media (max-width:1023px){
+ 
+    #splited, #undersplit {
+    text-align: center;
+    width: 90%;
+   
+
+ }
+ #covercont {
+
+
+
+    border-radius: 50px;
+    height: 30vh;
+width: 95vw;
+}
+#glasscircle {
+    border-radius: 50px;
+
+}
+}

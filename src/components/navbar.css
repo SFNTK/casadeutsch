@@ -1,0 +1,124 @@
+
+#nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: .5% 1%;
+    background-color:black;
+    font-family: "DM Sans", sans-serif;
+    column-gap: 5%;
+    font-weight: bold;
+}
+
+#navlogo {
+    width: 15%;
+}
+
+#burger {
+    width: 10%;
+    transition: all 5s ease-in-out;
+    display: none;
+    margin-right: 10px;
+}
+
+#ulpc {
+    width: 50%;
+    display: flex;
+    column-gap: 4%;
+    justify-content: flex-end;
+    color: var(--primary-color);
+
+}
+
+#ulpc li {
+
+    padding: 2%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#ulpc li:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#navbtn {
+    cursor: pointer;
+    margin-left: auto;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    transition: transform .2s ease-in-out;
+
+}
+
+#navbtn:hover {
+    transform: scale(1.1);
+}
+
+#navphone2{
+    position: absolute;
+    z-index: 999;
+    transform: scaleY(0);
+    transition: transform .5s ease-in-out;
+    transform-origin: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--primary-color);
+
+}
+#ulphone{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 15vh;
+
+}
+#close{
+    width: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+#ulphone li{
+background-color: black;
+width: 100%;
+text-align: center;
+border-radius: 10px;
+padding: 15px;
+color: white;
+font-size: 1.2rem;
+
+
+}
+
+@media(max-width:1023px) {
+    #ulpc {
+        display: none;
+    }
+
+#nav{
+    justify-content: space-between;
+    padding: 2% 0%;
+}
+    #burger {
+        display: flex;
+    }
+    #navbtn {
+        display: none;
+    }
+#navlogo {
+    width: 25%;
+}
+#ulpc{
+    display: none;
+}
+
+}

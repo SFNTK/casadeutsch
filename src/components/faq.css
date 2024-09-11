@@ -1,0 +1,41 @@
+#faq{
+    width: 100%;
+    padding: 5vh 0;
+    background-color: #FAF9F6;
+    overflow: hidden;
+
+}
+#faq h2{
+    color: #f36c3b;
+    font-size: 2rem;
+    font-family: "DM Sans", sans-serif;
+font-weight: bold;
+text-align: center;
+
+    
+}
+#instacont{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+
+}
+.instagrampost{
+    width: 30%;
+
+}
+@media (max-width:992px){
+   
+}
+@media (max-width:1023px){
+    #instacont{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .instagrampost{
+        width: 90%;
+        align-self: center;
+    }
+}

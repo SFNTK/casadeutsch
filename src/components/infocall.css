@@ -1,0 +1,80 @@
+.card-container {
+    display: flex;
+
+  column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  padding: 20px 0;
+  }
+
+  .card {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+   min-height:130px ;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgb(243, 108, 59,.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    justify-content: center;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .card h3 {
+    margin-top: 10px;
+    font-size: 1.4em;
+    color: var(--text-color)
+  }
+  .card img{
+    width: 30px;
+  }
+
+  .card p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: var(--background-color);
+    text-align: center;
+  }
+
+  .flag {
+    display: inline-block;
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+
+  .phone-number {
+    font-weight: bold;
+  }
+
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .card {
+    animation: fadeInUp 0.5s ease-in-out both;
+  }
+  
+@media(max-width:1023px) {
+    .card-container {
+        flex-direction: column;
+    }
+    .card {
+        height: auto;
+    }
+}
