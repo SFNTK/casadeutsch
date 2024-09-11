@@ -1,3 +1,4 @@
+import  { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Navbar from '../src/components/navbar';
@@ -10,6 +11,7 @@ import Contact from '../src/components/contact';
 import Footer from '../src/components/footer';
 import Services from '../src/components/Services';
 import Infocall from './components/infocall';
+
 import Allfaq from './components/allfaq';
 
 
@@ -21,6 +23,9 @@ import Allfaq from './components/allfaq';
 
 
 function App() {
+  useEffect(()=>{
+    document.title="casa deutsch"
+  },[])
   return (
  <>
  <Navbar/>
