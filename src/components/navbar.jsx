@@ -7,7 +7,7 @@ const Navbar = () => {
  
     return (
         <div id='nav'>
-            <img src='./logodeutch1.png' id='navlogo' />
+            <img src='./logodeutch2.png' id='navlogo' />
             <ul id='ulpc'>
             <li onClick={()=>{
 const section = document.getElementById('services');
