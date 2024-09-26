@@ -15,9 +15,9 @@ const About = () => {
         });
         tls211.fromTo("#about img",{opacity:.8,x:-20},{
             opacity:1,x:1,duration:.6,ease:"power1.inOut"
-        }).fromTo("#abouttxt",{ opacity:0, transform: "scale(.9, .9)"},{
+       ,"animationabout"}).fromTo("#abouttxt",{ opacity:0, transform: "scale(.9, .9)"},{
             transform:"scale(1,1)",duration:.8,ease:"power1.inOut",opacity:1
-        })
+        },"animationabout")
     },[])
     return (
         <div id='about'>
