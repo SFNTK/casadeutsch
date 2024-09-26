@@ -132,6 +132,10 @@ const Hero = () => {
                             <span>{text}</span>
                         );
                     }}
+                      speed="500"
+                    typingDelay="500"
+                    eraseDelay="500"
+                    eraseSpeed="300"
                 /></span>
 
 <div id='covercont'>
