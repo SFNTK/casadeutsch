@@ -1,7 +1,10 @@
 
 import React, { useEffect, useState } from 'react';
 import "./services.css";
+import gsap from 'gsap';
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 const Services = () => {
+    
     const [cardsservice, setcardsservice] = useState(null)
     const cardsservicearray = [
         {key:1,
@@ -27,8 +30,34 @@ const Services = () => {
             <p>{dt.para}</p>
         </div>})
         setcardsservice(data)
+             const tls200 = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#paraservicesanimation",
+                start: "top 95%",
+                end: "top -50%",
+      
+
+            }
+        });
+        tls200.fromTo("#paraservicesanimation",{clipPath:"polygon(0 0, 0 0, 0 100%, 0% 100%)"},{
+            clipPath:"polygon(100% 0, 0 0, 0 100%, 100% 100%)",duration:1,ease:"power1.inOut"
+        })
     },
         [])
+
+       useEffect(()=>{
+            const tls210 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".servcard",
+                    start: "top 90%",
+                    end: "top -50%",
+                    
+    
+                }
+            });
+            tls210.fromTo(".servcard",{opacity:0,y:10},{opacity:1,y:0,stagger:.2,duration:.8,ease:"power1.inOut"})
+
+        },[cardsservice])
     return (
         <div id='services'>
             <div id='firstpart'>
